@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Eskisehir2.Home">
+	<ContentPage.Resources>
+		<ResourceDictionary>
+			<x:String x:Key="eskisehir">
+				Eskişehir is a city in northwestern Turkey and the capital of the Eskişehir Province. The urban population of the city is 717,135 with a metropolitan population of 826,135.The city is located on the banks of the Porsuk River, 792 m above sea level, where it overlooks the fertile Phrygian Valley.In the nearby hills one can find hot springs.
+			</x:String>
+		</ResourceDictionary>
+	</ContentPage.Resources>
+
+	<ContentPage.Content>
+		<ScrollView>
+			<StackLayout>
+
+				<Image  Source="eskisehir.png" ScaleY="1.2" />
+				<Label Text="Eskisehir" FontSize="30" Margin="5,15,0,0" />
+				<Label 
+Text="Eskişehir is a city in northwestern Turkey and the capital of the Eskişehir Province. The urban population of the city is 717,135 with a metropolitan population of 826,135.The city is located on the banks of the Porsuk River, 792 m above sea level, where it overlooks the fertile Phrygian Valley.In the nearby hills one can find hot springs."
+				   
+				  FontSize="20" Margin="10,0,10,10"/>
+
+			</StackLayout>
+		</ScrollView>
+	</ContentPage.Content>
+</ContentPage>

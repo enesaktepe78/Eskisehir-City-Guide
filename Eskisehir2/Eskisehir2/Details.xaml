@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Eskisehir2.Details">
+	<ContentPage.Resources>
+		<ResourceDictionary>
+
+			<x:String x:Key="balaban">Balaban Köfte</x:String>
+			<x:String x:Key="met">Met Helvası</x:String>
+			<x:String x:Key="ciborek">Çibörek</x:String>
+			<x:String x:Key="yufka">Yufkalı Büryan</x:String>
+			<x:String x:Key="kiygasa">Kıygaşa</x:String>
+			<x:String x:Key="gozleme">Haşhaşlı Gözleme</x:String>
+			<x:String x:Key="tarhana">Göceli Tarhana</x:String>
+			<x:String x:Key="abista">Abısta</x:String>
+			<x:String x:Key="bamya">Bamya Çorbası</x:String>
+			<x:String x:Key="gobete">Göbete</x:String>
+			<x:String x:Key="boza">Boza</x:String>
+			<x:String x:Key="hashas">Haşhaşlı Dolama</x:String>
+
+			<x:String x:Key="source" >balaban.jpg</x:String>
+			<x:String x:Key="desp">
+				One of the most famous and delicious dishes of the city is balaban dumplings ,pancakes cut in tiny squares with bones of water, a tomato sauce, yoghurt and butter on top, and finally grill panes. It's a delicious meal for us, too.
+			</x:String>
+			<x:String x:Key="desp2">
+				The main ingredients are flour, sugar, lemon, oil and water, the most famous of the city. It is very difficult to make this delicious dessert which is enriched with various nuts or cocoa.That's why it would be good to get it from the places where real masters work instead of doing it at home for a good meal.
+			</x:String>
+			<x:String x:Key="desp3">
+				Although it is known as "çiğbörek" in general, this flavor, which is actually called "çibörek", is the most beautiful contribution of Crimean Tatars to Eskişehir.The mixture of onion, mince and various spices is a perfect match with the dough and the resulting sprouts. Eskişehir offers different restaurants with different kinds of ingredients.
+			</x:String>
+			<x:String x:Key="desp4">
+				Boiled with bones and then separated from the bones of a chicken with rice and spices, the magnificent flavor, pastry dough into the dough is sent to the journey.
+			</x:String>
+			<x:String x:Key="desp5">
+				It is made by frying in plenty of oil in the cauldron called "Şöyün " by placing black seed or ground beef in the leavened dough.
+			</x:String>
+			<x:String x:Key="desp6">
+				The famous flavor of Odunpazarı district, famous for its historical houses in Eskişehir, has poppyseed waffles, one of the dishes most preferred by the tourists coming to the district.
+			</x:String>
+			<x:String x:Key="desp7">
+				Tarhana soup prepared with göce, which can be described as broken wheat, gives taste and taste in the first spoon. Soup prepared with green lentils, chickpeas, yogurt and göce is known as panacea.
+			</x:String>
+			<x:String x:Key="desp8">
+				Abyss is a Circassian flavor that replaces bread in the city. Known as  abaza bread among the people, this additive is prepared with corn flour and abaza cheese. The taste is quite delicious
+			</x:String>
+			<x:String x:Key="desp9" >
+				This healthy soup prepared in almost every home is one of the most famous flavors of Sivrihisar. Okra soup is prepared for special occasions and wedding meals in the region. The most important feature of the soup at the end of the meal is to drink to facilitate digestion.
+			</x:String>
+			<x:String x:Key="desp10">
+				It is a delicious pastry that you can eat in the city. With its layer of yufka and delicious interior mortar, it leaves a delicious souvenir on the taste buds.
+			</x:String>
+			<x:String x:Key="desp11">
+				You can't come to Eskişehir and come back without drinking boza. There are many famous businesses that you can drink in the city boza. The benefits of the boza, which is a panacea in the harsh cold winter months of the city, do not stop counting. We must try.
+			</x:String>
+			<x:String x:Key="desp12">
+				Another one of the pastry flavors that poppy adds flavor to is the poppy filling. Lentil, boiled potatoes and cheese mixture prepared with an internal mortar that adds flavor to the flavor of the dolma gives the name of the folding dough to take the form of cylinders.
+			</x:String>
+
+			<Color x:Key="bg">Blue</Color>
+
+		</ResourceDictionary>
+
+	</ContentPage.Resources>
+	<ContentPage.Content>
+		<ScrollView>
+			<StackLayout>
+				<Image x:Name="yemek" Source="{d:DynamicResource source}"  />
+
+				<StackLayout Orientation="Horizontal">
+					<Label Text="{DynamicResource balaban}"
+                VerticalOptions="Start" 
+                HorizontalOptions="Start" Margin="15,5,15,5" FontSize="30" />
+				</StackLayout>
+				<StackLayout>
+					<Label Text="{DynamicResource desp}" FontSize="25" Margin="10,10,10,0"  />
+				</StackLayout>
+
+
+			</StackLayout>
+		</ScrollView>
+	</ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Eskisehir2.Historical_Details">
+	<ContentPage.Resources>
+		<ResourceDictionary>
+			<x:String x:Key="source">odunpazari.jpg</x:String>
+			<x:String x:Key="odunpazari">Odunpazarı</x:String>
+			<x:String x:Key="yazilikaya" >Yazılıkaya</x:String>
+			<x:String x:Key="kursunlu">Kurşunlu Mosque</x:String>
+			<x:String x:Key="kentpark" >Kentpark</x:String>
+			<x:String x:Key="selale">Şelale Park</x:String>
+			<x:String x:Key="balmumu" >Balmumu Museum</x:String>
+			<x:String x:Key="eti">Eti Arkeoloji Museum</x:String>
+			<x:String x:Key="cagdas" >Çağdaş Cam Sanatları</x:String>
+			<x:String x:Key="devrim">Devrim Arabası</x:String>
+			<x:String x:Key="omm" >Odunpazarı Modern Museum</x:String>
+
+			<x:String x:Key="desp1" >
+				Odunpazarı, is a historic district of Eskişehir Province in the Central Anatolia region of Turkey. Odunpazarı is one of the central districts of Eskişehir along with the district of Tepebaşı.
+			</x:String>
+			<x:String x:Key="desp2" >
+				Yazılıkaya , Phrygian Yazılıkaya, or Midas City is a village in Eskişehir Province Turkey known for its Phrygian archaeological remains and inscription mentioning Midas in Eskişehir Province Turkey known for its Phrygian archaeological remains and inscription mentioning Midas The ancient remains are sometimes called the Midas Monument or Midas City and were formerly identified as the tomb of Midas
+			</x:String>
+			<x:String x:Key="desp3" >
+				Kurşunlu Mosque and Complex is a 16th-century Ottoman mosque and its social complex in Odunpazarı district of Eskişehir The mosqe and the complex were commissioned by the Ottoman vizier Çoban Mustafa Pasha, and were built between 1517 and 1525.</x:String>
+			<x:String x:Key="desp4" >
+				Kentpark is one of the most beautiful and popular parks in Eskişehir. Located in the Gökmeydan neighborhood on the edge of Porsuk Stream, the park is also opposite the Eskişehir Intercity Bus Station.</x:String>
+			<x:String x:Key="desp5" >
+				Located in Odunpazarı, Eskişehir Selale Park hosts both the biggest artificial waterfall in Eskisehir and fascinates those who see it with its scenery. It is one of the parks that must be visited by those who come to Eskişehir.</x:String>
+			<x:String x:Key="desp6" >
+				In the museum, which attracts the attention of everyone from seven to seventy with its stunning collection, you can see the wax statues prepared with great care by the local and foreign names who have been successful in their fields.</x:String>
+			<x:String x:Key="desp7" >
+				Eti Archeology Museum located in the district of Odunpazarı in Eskisehir. The museum exhibits works of Neolithic, Chalcolithic, Bronze, Hittite, Phrygian, Hellenistic, Roman, Byzantine, Seljuk and Ottoman periods. In the museum where there are approximately 22,500 artifacts, only 2,000 of the artifacts are exhibited to the visitors and the rest is preserved in the museum's warehouse.</x:String>
+			<x:String x:Key="desp8" >
+				Located in the museum first opened in Turkey History of local and foreign artists to make unique works of glass art donated to the museum in its own workshops you can see in the Odunpazari house.</x:String>
+			<x:String x:Key="desp9" >
+				Devrim, which was produced in 1961 under the orders of President Cemal Gürsel in 4.5 months, weighs 1250 kg and has a maximum speedometer of 140 km / h. With the exhaust pipe on the side, main and dipped beam headlamps, the ignition switch can be operated manually, the Revolution attracts attention with these features.</x:String>
+			<x:String x:Key="desp10" >
+				Odunpazari Museum of Modern Art, a meeting point for the exhibition of modern and contemporary art from Turkey and the world.</x:String>
+			
+		</ResourceDictionary>
+	</ContentPage.Resources>
+	<ContentPage.Content>
+		<ScrollView>
+			<StackLayout>
+				<Image x:Name="historical" Source="{d:DynamicResource source}"  />
+
+				<StackLayout Orientation="Horizontal">
+					<Label Text="{DynamicResource odunpazari}"
+                VerticalOptions="Start" 
+                HorizontalOptions="Start" Margin="15,5,15,5" FontSize="30" />
+				</StackLayout>
+				<StackLayout>
+					<Label Text="{DynamicResource desp}" FontSize="25" Margin="10,10,10,0"  />
+				</StackLayout>
+				
+			</StackLayout>
+		</ScrollView>
+	</ContentPage.Content>
+</ContentPage>

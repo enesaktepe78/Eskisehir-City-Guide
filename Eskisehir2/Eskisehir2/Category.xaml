@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Eskisehir2.Category">
+	<ContentPage.Content>
+		<Grid  >
+			<Grid.RowDefinitions>
+				<RowDefinition Height="3*"/>
+				<RowDefinition />
+				<RowDefinition Height="3*" />
+				<RowDefinition  />
+
+
+			</Grid.RowDefinitions>
+
+			<ImageButton Clicked="ImageButton_Clicked" Grid.Row="0" 
+						 HorizontalOptions="CenterAndExpand"  
+						 Source="mustsee.jpg" 
+						 Margin="5,5,5,5" />
+			<Label  Text="Places to Travel " Grid.Row="1" HorizontalOptions="CenterAndExpand" FontSize="30" />
+			<ImageButton x:Name="lcl" Clicked="ImageButton_Clicked_1"  
+						 Grid.Row="2" HorizontalOptions="CenterAndExpand" 
+						  Source="ciborek.jpg"
+						 Margin="5,5,5,5"
+						 />
+			<Label Text="Local Dishes"  Grid.Row="3" HorizontalOptions="CenterAndExpand" FontSize="30" />
+
+		</Grid>
+	</ContentPage.Content>
+</ContentPage>

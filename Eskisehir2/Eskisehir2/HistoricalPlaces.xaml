@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Eskisehir2.HistoricalPlaces">
+	<ContentPage.Resources>
+		<ResourceDictionary>
+			<x:String x:Key="yazılıkaya">Yazılıkaya</x:String>
+			<x:String x:Key="odunpazarı">Odunpazarı</x:String>
+			<x:String x:Key="kursunlu">Kurşunlu Cami</x:String>
+			<x:String x:Key="sazova">Sazova Bilim Sanat ve Kültür Parkı</x:String>
+			<x:String x:Key="balmumu">Balmumu Müzesi</x:String>
+			<x:String x:Key="kentpark">Kentpark</x:String>
+			<x:String x:Key="eti">Eti Arkeoloji Müzesi</x:String>
+			<x:String x:Key="selale">Şelale Park</x:String>
+			<x:String x:Key="cam">Çağdaş Cam Sanatları Müzesi</x:String>
+			<x:String x:Key="modern">Odunpazarı Modern Müze</x:String>
+			<x:String x:Key="devrim">Devrim Otomobili</x:String>
+		</ResourceDictionary>
+	</ContentPage.Resources>
+
+	<ContentPage.Content>
+		<StackLayout>
+			<SearchBar TextChanged="SearchBar_TextChanged" />
+			<ListView x:Name="list" ItemsSource="{Binding hst}"
+          HasUnevenRows="true"
+          ItemSelected="OnListViewItemSelected"
+          ItemTapped="OnListViewItemTapped">
+				<ListView.ItemTemplate>
+					<DataTemplate>
+						<ViewCell>
+							<Grid Padding="10">
+								<Grid.RowDefinitions>
+									<RowDefinition Height="7*" />
+									<RowDefinition Height="*" />
+								</Grid.RowDefinitions>
+
+								<Image Grid.Row="0"
+                           Source="{Binding ImageUrl}" 
+                          />
+								<Label Grid.Row="1"
+                           Text="{Binding Name}"
+                           FontAttributes="Bold" />
+
+							</Grid>
+						</ViewCell>
+					</DataTemplate>
+				</ListView.ItemTemplate>
+			</ListView>
+		</StackLayout>
+	</ContentPage.Content>
+</ContentPage>

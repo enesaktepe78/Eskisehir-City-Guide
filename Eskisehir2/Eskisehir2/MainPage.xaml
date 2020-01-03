@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+			xmlns:local="clr-namespace:Eskisehir2"
+			mc:Ignorable="d"
+             x:Class="Eskisehir2.MainPage">
+
+	<TabbedPage.Children  >
+		<local:Home Title="Home"  />
+		<local:Category  Title="Category"  />
+		<local:More Title="More"  />
+	</TabbedPage.Children>
+
+</TabbedPage>
